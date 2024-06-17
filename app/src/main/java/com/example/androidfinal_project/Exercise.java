@@ -13,6 +13,13 @@ public class Exercise {
         this.count = 0; //초기 count값은 0
     }
 
+      public Exercise(String name, int weight, int reps,int count) {
+        this.name = name;
+        this.weight = weight;
+        this.reps = reps;
+        this.count = count; //초기 count값은 0
+    }
+
     public String getName() {
         return this.name;
     }
