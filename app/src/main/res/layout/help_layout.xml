@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/basic"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- 제작자 이름 -->
+    <TextView
+        android:id="@+id/creatorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="제작자 이름: 송상훈"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- 뒤로가기 버튼 -->
+
+    <!-- 바디 캘린더 이름과 이미지 -->
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="196dp"
+        android:layout_height="152dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="516dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/back" />
+
+    <LinearLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/creatorTextView"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@drawable/dumbel"
+            android:scaleType="centerCrop"
+            android:contentDescription="dumbel icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="바디 캘린더"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <!-- 바디캘린더 설명 텍스트 -->
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="357dp"
+        android:layout_below="@id/titleLayout"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="기록이 몸을 만든다!! 모든 운동에는 ‘점진적 과부하’가 중요합니다. 어제보다 1kg이라도 더 많이 들었다면 오늘의 운동은
+성공!!이에요.  하지만 기록하지 않는다면 오늘의 운동의 성공을 알 수 있을까요? 바디 캘린더는 번거로운 운동 기록을 손쉽게 할 수 있도록 도와드립니다.오늘의 운동을 기록하세요.\n\n[기록 외 기능도 많이 있어요!]\n운동 후 감정 기록 및 메모"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>
