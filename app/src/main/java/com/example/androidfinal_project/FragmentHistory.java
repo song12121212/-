@@ -86,8 +86,8 @@ public class FragmentHistory extends Fragment {
                             String exerciseName = line.replace("Exercise: ", "");
                             int reps = Integer.parseInt(reader.readLine().replace("Reps: ", ""));
                             int weight = Integer.parseInt(reader.readLine().replace("Weight: ", ""));
-                            int count = Integer.parseInt(reader.readLine().replace("Count: ", ""));
-                            Exercise exercise = new Exercise(exerciseName, reps, weight);
+                            int count = reps;
+                            Exercise exercise = new Exercise(exerciseName,weight, reps,count);
                             exerciseList.add(exercise);
                         }
                     }
