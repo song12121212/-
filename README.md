@@ -94,3 +94,6 @@
 #### 2.4 발표영상
 
 Youtube 동영상
+
+
+https://youtu.be/gnQMNSwbV3o
